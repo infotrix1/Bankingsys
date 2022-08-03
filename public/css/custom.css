@@ -1,0 +1,231 @@
+/* ===============Profile Image Upload============== */
+
+.avatar-upload {
+    position: relative;
+    max-width: 350px;
+    margin: 20px auto;
+}
+
+.avatar-upload .avatar-edit {
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 90px;
+}
+
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+
+.avatar-upload .avatar-edit label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all .2s ease-in-out;
+}
+
+.avatar-upload .avatar-edit label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+
+.avatar-upload .avatar-edit label:after {
+    content: "\f304";
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    color: #757575;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.avatar-preview {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-preview div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.plan-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.plan-card {
+    padding: 0 !important;
+}
+
+.plan-card__header {
+    background-color: #00a6f7;
+    padding: 20px;
+    height: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+@media(max-width: 767px) {
+    .plan-card__header {
+        height: 130px;
+    }
+    .plan-card .plan-name {
+        font-size: 1rem !important;
+    }
+    .plan-card .plan-price {
+        font-size: 2rem !important;
+    }
+    .plan-card__body {
+        margin-top: 1.8rem !important;
+    }
+}
+
+.plan-card__footer {
+    padding: 20px;
+}
+
+.expired-time-circle {
+    margin-top: 15px;
+    border-radius: 50%;
+    color: #ffff;
+    width: 80px;
+    height: 80px;
+    border: 4px solid #88fb3b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.expired-time-circle.danger-border {
+    border-color: #fb3b47;
+}
+
+.bottom-menu .navbar-collapse {
+    background-color: transparent;
+}
+
+.bottom-menu ul li {
+    text-align: center;
+}
+
+.bottom-menu ul li a {
+    padding: 15px 20px;
+    display: block;
+    color: #fff;
+    font-family: "Exo", cursive;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1199px) {
+    .bottom-menu ul li a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .bottom-menu ul li a {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+}
+
+.bottom-menu ul li a:hover,
+.bottom-menu ul li a.active {
+    color: #fb3b47;
+}
+
+.form-control {
+    line-height: 2
+}
+
+.beneficiary-card .nav-tabs {
+    border-bottom: none;
+}
+
+.beneficiary-card .nav-item.show .nav-link,
+.nav-link.active {
+    color: #495057;
+    background-color: unset;
+    border-color: unset
+}
+
+.beneficiary-card .nav-tabs .nav-link {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-color: #dee2e6;
+    color: #fff;
+
+}
+
+.beneficiary-card .nav-tabs .nav-item.show .nav-link,
+.beneficiary-card .nav-tabs .nav-link.active {
+    background-color: #fb3b47;
+    border-color: #fb3b47;
+}
+
+.cookie-modal {
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    bottom: -600px;
+    width: 100%;
+    padding: 30px 100px;
+    transition: bottom 0.5s;
+    z-index: 1000;
+    color: #fff;
+}
+
+.cookie-modal.show {
+    bottom: 0px;
+}
+
+@media(max-width: 767px) {
+    .cookie-modal {
+        padding: 30px 50px;
+    }
+    .cookie-modal .close-btn {
+        font-size: 16px !important;
+    }
+}
+
+@media(max-width: 591px) {
+    .cookie-modal {
+        padding: 30px 30px;
+    }
+}
+
+.cookie-modal .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background: transparent;
+    color: #ffff;
+    border: none;
+    font-size: 24px;
+}
